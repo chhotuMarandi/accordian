@@ -43,16 +43,16 @@ const accordianTitle = document.querySelectorAll(".title");
 
 accordianTitle.forEach(currentTitle => {
     currentTitle.addEventListener("click",(e)=>{
-        if(currentTitle.classList.contains("acitve")){
+        if(currentTitle.classList.contains("active")){
             currentTitle.classList.remove("active");
         } else {
-            let getAllreadyAddClass = document.querySelectorAll(".active");
-            // currentTitle.classList.remove(getAllreadyAddClass);
-            getAllreadyAddClass.forEach(currentItem=>{
-                currentItem.classList.remove("active")
-            })
+            let getAllreadyActiveClass = document.querySelectorAll(".active");
             
-            currentTitle.classList.add("active")
+            getAllreadyActiveClass.forEach(currentActiveClass=>{
+                currentActiveClass.classList.remove("active")
+            });
+            
+            currentTitle.classList.add("active");
         }
     })
 });

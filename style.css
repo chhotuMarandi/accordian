@@ -1,0 +1,7 @@
+.ans{
+    display: none;
+}
+
+.title.active + .ans {
+    display: block;
+}
