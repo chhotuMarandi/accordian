@@ -12,3 +12,17 @@ const data = [
         ans: "Our next step is to identify data sources you need to dig into all your data, pick the fields that you’ll need, leave some space for data you might potentially need in the future, and gather all the information in one place. Be open-minded about your data sources in this step – all departments in your company, sales, finance, IT, etc., have the potential to provide insights."
     },
 ]
+
+const accordianWrapper = document.querySelector(".wrapper");
+
+function getDataAccordian(){
+    accordianWrapper.innerHTML = data.map(accordianItem=> `
+    
+                <div >
+                    <h2>${accordianItem.question}</h2>
+                    <p>${accordianItem.ans}</p>
+                </div>
+    `)
+}
+
+getDataAccordian();
