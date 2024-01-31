@@ -1,5 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(208, 208, 208);
+}
+
+.container{
+    width: 700px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 600px; /* Set your desired maximum width */
+    margin: 0 auto;   /* Center the container */
+}
+
+.box {
+    background-color: yellow;
+    border-radius: 12px;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 1em;
+}
+
+
 .ans{
     display: none;
+    margin: 0 1em;
 }
 
 .title.active + .ans {
